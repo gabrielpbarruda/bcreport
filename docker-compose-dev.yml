@@ -1,0 +1,12 @@
+version: '2'
+services:
+  redis:
+    mem_limit: 8589934592
+    image: redis:alpine
+    ports:
+      - 6379:6379
+  bcReport:
+    mem_limit: 8589934592
+    image: sicredi-0.0.1-SNAPSHOT
+    ports:
+      - 8080:8080/tcp
